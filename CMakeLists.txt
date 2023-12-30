@@ -13,6 +13,10 @@ set(GLFW_INSTALL OFF CACHE BOOL "" FORCE)
 add_subdirectory(external/glfw) #в этой папке ищется cmakelists и импортируется сюда
 target_link_libraries(glcpp glfw) #glfw - создан с помощью add_library в glfw/cmakelists.txt
 
+#GLAD
+add_subdirectory(external/glad)
+target_link_libraries(glcpp glad)
+
 
 
 
